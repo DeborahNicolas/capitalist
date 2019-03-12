@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/pv-ni/OneDrive/Documents/FIE4/ISIS%20Capitalist/capitalist/capitalist/../../worldSchema.xsd" uri="src/main/resources/jaxb/worldSchema/worldSchema.xsd"/>
+</catalog>
