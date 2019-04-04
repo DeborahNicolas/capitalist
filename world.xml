@@ -133,7 +133,7 @@ and open the template in the editor.
             </palliers>
         </product>
 
-    <!--    <product>
+        <product>
             <id>4</id>
             <name>Raisins</name>
             <logo>raisins.png</logo>
@@ -144,8 +144,25 @@ and open the template in the editor.
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>False</managerUnlocked>
-            <palliers> upgrade argent, upgrade ange, cerise
+            <palliers>
+              <pallier>
+                  <name>Rémi</name>
+                  <logo>Rémi.png</logo>
+                  <seuil>2000</seuil>
+                  <idcible>4</idcible>
+                  <unlocked>False</unlocked>
+              </pallier>
+              <pallier>
+                  <name>upgrade argent</name>
+                  <logo>money.png</logo>
+                  <seuil>2500</seuil>
+                  <idcible>0</idcible>
+                  <ratio>2</ratio>
+                  <typeratio>gain</typeratio>
+                  <unlocked>False</unlocked>
+              </pallier>
         </palliers>
+      </product>
 
             <product>
                 <id>5</id>
@@ -155,11 +172,28 @@ and open the template in the editor.
                 <croissance>2,0</croissance>
                 <revenu>100</revenu>
                 <vitesse>8000</vitesse>
-                <quantite>0</quantite>
+                <quantite>1</quantite>
                 <timeleft>0</timeleft>
                 <managerUnlocked>False</managerUnlocked>
-                <palliers> upgrade argent, upgrade temps
+                <palliers>
+                  <pallier>
+                      <name>François</name>
+                      <logo>François.png</logo>
+                      <seuil>5000</seuil>
+                      <idcible>5</idcible>
+                      <unlocked>False</unlocked>
+                  </pallier>
+                  <pallier>
+                      <name>upgrade argent</name>
+                      <logo>money.png</logo>
+                      <seuil>2500</seuil>
+                      <idcible>0</idcible>
+                      <ratio>2</ratio>
+                      <typeratio>gain</typeratio>
+                      <unlocked>False</unlocked>
+                  </pallier>
             </palliers>
+          </product>
 
             <product>
                     <id>6</id>
@@ -172,9 +206,34 @@ and open the template in the editor.
                     <quantite>0</quantite>
                     <timeleft>0</timeleft>
                     <managerUnlocked>False</managerUnlocked>
-                    <palliers> upgrade argent, upgrade temps, upgrade ange, cerise, pasteque, melon
-            </palliers> -->
-
+                    <palliers>
+                      <pallier>
+                          <name>Melanie</name>
+                          <logo>Melanie.png</logo>
+                          <seuil>15000</seuil>
+                          <idcible>6</idcible>
+                          <unlocked>False</unlocked>
+                      </pallier>
+                      <pallier>
+                          <name>upgrade argent</name>
+                          <logo>money.png</logo>
+                          <seuil>2500</seuil>
+                          <idcible>0</idcible>
+                          <ratio>2</ratio>
+                          <typeratio>gain</typeratio>
+                          <unlocked>False</unlocked>
+                      </pallier>
+                      <pallier>
+                          <name>upgrade temps</name>
+                          <logo>time.png</logo>
+                          <seuil>5000</seuil>
+                          <idcible>0</idcible>
+                          <ratio>1.5</ratio>
+                          <typeratio>vitesse</typeratio>
+                          <unlocked>False</unlocked>
+                      </pallier>
+            </palliers>
+</product>
     </products>
     <allunlocks>
         <pallier>
@@ -283,6 +342,27 @@ and open the template in the editor.
             <logo>Patrik.png</logo>
             <seuil>500</seuil>
             <idcible>3</idcible>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Rémi</name>
+            <logo>Patrik.png</logo>
+            <seuil>2000</seuil>
+            <idcible>4</idcible>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>François</name>
+            <logo>Patrik.png</logo>
+            <seuil>5000</seuil>
+            <idcible>5</idcible>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Melanie</name>
+            <logo>Cherry.png</logo>
+            <seuil>15000</seuil>
+            <idcible>6</idcible>
             <unlocked>False</unlocked>
         </pallier>
     </managers>

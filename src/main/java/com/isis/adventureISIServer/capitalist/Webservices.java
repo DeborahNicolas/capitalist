@@ -8,6 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.xml.bind.JAXBException;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -33,9 +34,10 @@ public class Webservices {
     //@Produces(MediaType.APPLICATION_XML)
     //On modifie l'anotation
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response getXml(@Context HttpServletRequest request) {
+    public Response getXml(@Context HttpServletRequest request) throws JAXBException {
         String username = request.getHeader("X-user");
-        return Response.ok(services.readWorldFromXml()).build();
+      //  return Response.ok(services.readWorldFromXml(username)).build();
+      return Response.ok(services.readWorldFromXml()).build();
     }
  
 
