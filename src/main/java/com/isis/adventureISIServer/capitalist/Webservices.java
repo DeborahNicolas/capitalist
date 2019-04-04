@@ -1,9 +1,11 @@
 package com.isis.adventureISIServer.capitalist;
 
 
+import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -31,8 +33,11 @@ public class Webservices {
     //@Produces(MediaType.APPLICATION_XML)
     //On modifie l'anotation
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response getWorld() {
+    public Response getXml(@Context HttpServletRequest request) {
+        String username = request.getHeader("X-user");
         return Response.ok(services.readWorldFromXml()).build();
     }
+ 
+
 
 }

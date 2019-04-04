@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 /**
  *
- * @author pv-ni jii
+ * @author pv-ni
  */
 @Component
 @ApplicationPath("/capitalist")
